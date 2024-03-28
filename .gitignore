@@ -1,0 +1,17 @@
+__pycache__/
+.vscode
+.ipynb_checkpoints/
+*.pkl
+*.pdf
+*.zip
+*.egg-info/
+exps/
+.pylintrc
+tb
+run_*.py
+dataset
+temp/
+wandb/
+model_files/
+bak/
+results/

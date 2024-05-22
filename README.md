@@ -1,23 +1,33 @@
-# AdaRefiner
+# 📄 AdaRefiner: Refining Decisions of Language Models with Adaptive Feedback
 
-Code for the paper ***AdaRefiner: Refining Decisions of Language Models with Adaptive Feedback***. [[ArXiv Paper]](https://arxiv.org/abs/2309.17176)
+The official repository of our [[Paper]](https://arxiv.org/abs/2309.17176) at **NAACL 2024**.
 
-![Framework](imgs/framework.png)
+![Framework](imgs/AdaRefiner_framework.png)
 
 *To reproduce the results of AdaRefiner, please follow the instructions below*.
 
-## Installation
+## Installation & Preparation
 
-Run
+1. Clone this repository and navigate to LLaVA folder
+
+```bash
+git clone https://github.com/PKU-RL/AdaRefiner.git
+cd AdaRefiner
 ```
+
+2. Install Package
+
+```bash
 conda create -n AdaRefiner python=3.10 -y
 conda activate AdaRefiner
+pip install --upgrade pip  # enable PEP 660 support
 pip install -r requirements.txt
 ```
 
-## Prepare models and configs
+3. Prepare models and configs
 
-You need to first download the Llama-2-7b-chat-hf model weights following [https://huggingface.co/meta-llama/Llama-2-7b-chat-hf](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf). After this, modify the following variables in `utils.py`:
+- You need to first download the Llama-2-7b-chat-hf model weights following [https://huggingface.co/meta-llama/Llama-2-7b-chat-hf](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf). 
+- After this, modify the following variables in `utils.py`:
 
 ```python
 API_KEY = '' # Your OpenAI API key
@@ -58,9 +68,13 @@ python sft.py
 
 To test with the final models, run `python test.py`.
 
+## Acknowledgements
+
+Parts of the code are based on the [crafter](https://github.com/danijar/crafter) and [stable-baselines3](https://github.com/DLR-RM/stable-baselines3) repository.
+
 ## Citation
 
-If you find this work useful, please cite our paper:
+If you find our work useful in your research and would like to cite our project, please use the following citation:
 
 ```latex
 @article{zhang2023adarefiner,

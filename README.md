@@ -1,6 +1,6 @@
 # 📄 AdaRefiner: Refining Decisions of Language Models with Adaptive Feedback
 
-The official repository of our [[Paper]](https://arxiv.org/abs/2309.17176) at **NAACL 2024**.
+The official repository of our [[Paper]](https://aclanthology.org/2024.findings-naacl.50.pdf) at **NAACL 2024**.
 
 ![Framework](imgs/AdaRefiner_framework.png)
 
@@ -20,7 +20,7 @@ cd AdaRefiner
 ```bash
 conda create -n AdaRefiner python=3.10 -y
 conda activate AdaRefiner
-pip install --upgrade pip  # enable PEP 660 support
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
@@ -77,10 +77,14 @@ Parts of the code are based on the [crafter](https://github.com/danijar/crafter)
 If you find our work useful in your research and would like to cite our project, please use the following citation:
 
 ```latex
-@article{zhang2023adarefiner,
-      title={AdaRefiner: Refining Decisions of Language Models with Adaptive Feedback}, 
-      author={Wanpeng Zhang and Zongqing Lu},
-      journal={arXiv preprint arXiv:2309.17176},
-      year={2023},
+@inproceedings{zhang-lu-2024-adarefiner,
+    title = "{A}da{R}efiner: Refining Decisions of Language Models with Adaptive Feedback",
+    author = "Zhang, Wanpeng and Lu, Zongqing",
+    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2024",
+    month = jun,
+    year = "2024",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-naacl.50",
+    pages = "782--799",
 }
 ```
